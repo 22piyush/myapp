@@ -1,0 +1,17 @@
+.heading{
+    text-align: center;
+}
+.error-message{
+    text-align: center;
+}
+.icon-add-user{
+    position: fixed;
+    top :20px;
+    right: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+.student-container{
+    height: 70vh;
+    overflow-y: scroll;
+}

@@ -1,0 +1,30 @@
+.heading{
+    text-align: center;
+}
+.input-box{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 15px;
+}
+.input-content{
+    width: 40%;
+    margin: 40px auto;
+}
+.button-field{
+    margin: 30px auto;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: none;
+    background-color: orangered;
+    color: aliceblue;
+    cursor: pointer;
+}
+.icon-home{
+    position: fixed;
+    top: 40px;
+    left: 140px;
+    height: 80px;
+    cursor: pointer;
+}
