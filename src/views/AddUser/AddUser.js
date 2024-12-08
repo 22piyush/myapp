@@ -14,7 +14,7 @@ function AddUser() {
 
   const addStudent = async () => {
     try {
-      const response = await axios.post("http://localhost:5001/students", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/students`, {
         rollNo: student.rollNo,
         name: student.name,
         city: student.city,

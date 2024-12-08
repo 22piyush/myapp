@@ -10,7 +10,7 @@ function App() {
 
   const loadStudents = async() =>{
     console.log("Loading Students....");
-    const response = await axios.get("http://localhost:5001/students");
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/students`);
     setStudents(response.data.data);
     // console.log(students);
   }

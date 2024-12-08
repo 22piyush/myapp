@@ -15,7 +15,7 @@ function Update() {
       const {rollNo} = useParams()
 
       const loadStudentDetail =async(rollNo)=> {
-        const response = await axios.get(`http://localhost:5001/students/${rollNo}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/students/${rollNo}`);
         setStudent(response.data.data);
       }
     
@@ -25,7 +25,7 @@ function Update() {
     
       const updateStudent = async () => {
         try {
-          const response = await axios.put(`http://localhost:5001/students/${rollNo}`, {
+          const response = await axios.put(`${process.env.REACT_APP_API_URL}/students/${rollNo}`, {
             name: student.name,
             city: student.city,
           });

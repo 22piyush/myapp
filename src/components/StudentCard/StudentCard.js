@@ -8,7 +8,7 @@ function StudentCard({rollNo,name,city}) {
   const navigate = useNavigate();
 
   const deleteStudent = async(rollNo)=>{
-     const response = await axios.delete(`http://localhost:5001/students/${rollNo}`);
+     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/students/${rollNo}`);
      window.location.reload();
     }
 
