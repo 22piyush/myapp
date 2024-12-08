@@ -10,7 +10,7 @@ function Detail() {
   const {rollNo} = useParams()
 
   const loadStudentDetail =async(rollNo)=> {
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}1/students/${rollNo}`);
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/students/${rollNo}`);
     setStudent(response.data.data);
   }
 
